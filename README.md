@@ -13,13 +13,13 @@ The goal is to create an autonomous system capable of generating content based o
 The AI takes in a short gist of description and generates an detailed output
 
 We provide the user with the following:<br />
-  1)Business Pitch<br />
-  2)Marketing Strategy<br />
-  3)Product Description<br />
-  4)Cold Emails<br />
-  5)Insta Captions<br />
-  6)Blogs<br />
-  7)Intro<br />
+  1.  Business Pitch<br />
+  2.  Marketing Strategy<br />
+  3.  Product Description<br />
+  4.  Cold Emails<br />
+  5.  Insta Captions<br />
+  6.  Blogs<br />
+  7.  Intro<br />
   
 ---------------------------------------------
 
