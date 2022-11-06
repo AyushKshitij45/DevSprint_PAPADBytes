@@ -8,7 +8,7 @@ The Track is Bleeding Edge and the Problem Statement is the fllowing:
 --------------------------------------------
 The goal is to create an autonomous system capable of generating content based on topic and related content as input
 --------------------------------------------
-#### Introduction
+### Introduction
 --------------------------------------------
 The AI takes in a short gist of description and generates an detailed output
 
@@ -24,7 +24,7 @@ We provide the user with the following:
 ---------------------------------------------
 
 
-### Methods used:
+#### Methods used:
 --------------------------------------------
 |  OpenAI  |    https://openai.com       |       
 |:---------:|:----------------------------:|
