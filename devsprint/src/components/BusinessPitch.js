@@ -1,10 +1,10 @@
 import React from 'react'
 import { Component } from 'react'
-import { Container, Form, FormText,Button, Card } from 'react-bootstrap'
+import { Container, Form, Button, Card } from 'react-bootstrap'
 const {Configuration, OpenAIApi} = require("openai");
 
 
-class ProductDescription extends Component {
+class BusinessPitch extends Component {
     constructor(){
         super()
         this.state = {
@@ -26,7 +26,7 @@ class ProductDescription extends Component {
 
         openai.createCompletion({
             model: "text-davinci-002",
-            prompt: `Write a detailed, smart, informative and professional product description for ${formDataObject.productName}`,
+            prompt: `Write a detailed, long and professional Business Pitch for ${formDataObject.productName}`,
             temperature: 0.8,
             max_tokens: 256,
             top_p: 1,
@@ -35,7 +35,7 @@ class ProductDescription extends Component {
         })
         .then((response)=> {
             this.setState({
-                heading: `Product Description Suggestions for: ${formDataObject.productName}`,
+                heading: `Business Pitch Suggestions for: ${formDataObject.productName}`,
                 response: `${response.data.choices[0].text}`
             })
         });
@@ -47,7 +47,7 @@ class ProductDescription extends Component {
                     <br/>
                     <br/>
                     <h2>Generate Product Description</h2>
-                    <p>Describe your product and get a product summary/description.</p>
+                    <p>Provide a short description of your business here to get a pre-made business pitch content.</p>
 
                     <Form onSubmit = {this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -85,4 +85,4 @@ class ProductDescription extends Component {
     }
 }
 
-export default ProductDescription
+export default BusinessPitch

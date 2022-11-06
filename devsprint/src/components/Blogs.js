@@ -1,10 +1,10 @@
 import React from 'react'
 import { Component } from 'react'
-import { Container, Form, FormText,Button, Card } from 'react-bootstrap'
+import { Container, Form, Button,Card } from 'react-bootstrap'
 const {Configuration, OpenAIApi} = require("openai");
 
 
-class ProductDescription extends Component {
+class Blogs extends Component {
     constructor(){
         super()
         this.state = {
@@ -15,6 +15,7 @@ class ProductDescription extends Component {
 
     onFormSubmit = e => {
         e.preventDefault()
+
         const formData = new FormData(e.target),
         formDataObject = Object.fromEntries(formData.entries())
         console.log(formDataObject.productName)
@@ -26,7 +27,7 @@ class ProductDescription extends Component {
 
         openai.createCompletion({
             model: "text-davinci-002",
-            prompt: `Write a detailed, smart, informative and professional product description for ${formDataObject.productName}`,
+            prompt: `Write a long, informative and descriptive blog about: ${formDataObject.productName}`,
             temperature: 0.8,
             max_tokens: 256,
             top_p: 1,
@@ -46,8 +47,9 @@ class ProductDescription extends Component {
                 <Container>
                     <br/>
                     <br/>
-                    <h2>Generate Product Description</h2>
-                    <p>Describe your product and get a product summary/description.</p>
+                    <h2>Generate a Blog</h2>
+                    <p>This features makes a blog based on a short description of the topic provided by you.
+                    </p>
 
                     <Form onSubmit = {this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -85,4 +87,4 @@ class ProductDescription extends Component {
     }
 }
 
-export default ProductDescription
+export default Blogs

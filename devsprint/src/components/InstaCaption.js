@@ -4,7 +4,7 @@ import { Container, Form, FormText,Button, Card } from 'react-bootstrap'
 const {Configuration, OpenAIApi} = require("openai");
 
 
-class ProductDescription extends Component {
+class InstaCaption extends Component {
     constructor(){
         super()
         this.state = {
@@ -26,7 +26,7 @@ class ProductDescription extends Component {
 
         openai.createCompletion({
             model: "text-davinci-002",
-            prompt: `Write a detailed, smart, informative and professional product description for ${formDataObject.productName}`,
+            prompt: `Write a short and catchy instagram caption for: ${formDataObject.productName}`,
             temperature: 0.8,
             max_tokens: 256,
             top_p: 1,
@@ -46,8 +46,8 @@ class ProductDescription extends Component {
                 <Container>
                     <br/>
                     <br/>
-                    <h2>Generate Product Description</h2>
-                    <p>Describe your product and get a product summary/description.</p>
+                    <h2>Generate Instagram Captions</h2>
+                    <p>Describe your posts to get an instagram caption</p>
 
                     <Form onSubmit = {this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -55,7 +55,7 @@ class ProductDescription extends Component {
                             <Form.Control 
                                 text="text"
                                 name="productName"
-                                placeholder="Write a short description of the product/brand" 
+                                placeholder="Paint a picture✨" 
                             />
                             
                         <br/>
@@ -85,4 +85,4 @@ class ProductDescription extends Component {
     }
 }
 
-export default ProductDescription
+export default InstaCaption
