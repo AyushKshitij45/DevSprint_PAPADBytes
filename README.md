@@ -1,6 +1,6 @@
 # DevSprint_PAPADBytes
 ## Abstract
-This repository consists of an approach to help people find their content with just a click of button. 
+This repository consists of an approach to help people find their content with just a click of button. <br />
 This project was started as part of the DevSprint Hackathon held in Kalinga Institute of Industrial Technology, Bhubaneshwar. 
 The Track is Bleeding Edge and the Problem Statement is the fllowing:
 
@@ -13,13 +13,13 @@ The goal is to create an autonomous system capable of generating content based o
 The AI takes in a short gist of description and generates an detailed output
 
 We provide the user with the following:
-  1)Business Pitch
-  2)Marketing Strategy
-  3)Product Description
-  4)Cold Emails
-  5)Insta Captions
-  6)Blogs 
-  7)Intro
+  1)Business Pitch<br />
+  2)Marketing Strategy<br />
+  3)Product Description<br />
+  4)Cold Emails<br />
+  5)Insta Captions<br />
+  6)Blogs<br />
+  7)Intro<br />
   
 ---------------------------------------------
 
