@@ -3,7 +3,6 @@ import { Component } from 'react'
 import { Container, Form, Button, Card } from 'react-bootstrap'
 const {Configuration, OpenAIApi} = require("openai");
 
-//Construct a class 
 class MarketStrategy extends Component {
     constructor(){
         super()
